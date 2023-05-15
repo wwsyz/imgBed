@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://xbeibeix.com/api/bilibili/ -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>贝贝BiliBili - B站视频下载</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="referrer" content="no-referrer">
+
+    <!--<link href="/hander/normalize.css@8.0.1/normalize.css" rel="stylesheet">-->
+<link href="./贝贝BiliBili - B站视频下载_files/all.min.css" rel="stylesheet">
+<!--
+<link href="https://unpkg.com/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap@4.6.0/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+-->
+<link href="./贝贝BiliBili - B站视频下载_files/bootstrap.min.css" rel="stylesheet">
+<script src="./贝贝BiliBili - B站视频下载_files/reactive_library_fy2021.js.下载"></script><script src="./贝贝BiliBili - B站视频下载_files/cookie.js.下载"></script><script src="./贝贝BiliBili - B站视频下载_files/show_ads_impl_fy2021.js.下载" id="google_shimpl"></script><script src="./贝贝BiliBili - B站视频下载_files/jquery.min.js.下载" crossorigin="anonymous"></script>
+<script src="./贝贝BiliBili - B站视频下载_files/popper.min.js.下载" crossorigin="anonymous"></script>
+<script src="./贝贝BiliBili - B站视频下载_files/bootstrap.min.js.下载" crossorigin="anonymous"></script>
+
+<link href="./贝贝BiliBili - B站视频下载_files/home.css" rel="stylesheet">
+    <script src="./贝贝BiliBili - B站视频下载_files/crypto-js.js.下载"></script>
+
+<meta http-equiv="origin-trial" content="A7CQXglZzTrThjGTBEn1rWTxHOEtkWivwzgea+NjyardrwlieSjVuyG44PkYgIPGs8Q9svD8sF3Yedn0BBBjXAkAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A3vKT9yxRPjmXN3DpIiz58f5JykcWHjUo/W7hvmtjgh9jPpQgem9VbADiNovG8NkO6mRmk70Kex8/KUqAYWVWAEAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A4A26Ymj79UVY7C7JGUS4BG1s7MdcDokAQf/RP0paks+RoTYbXHxceT/5L4iKcsleFCngi75YfNRGW2+SpVv1ggAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><link rel="preload" href="./贝贝BiliBili - B站视频下载_files/integrator.js.下载" as="script"><script type="text/javascript" src="./贝贝BiliBili - B站视频下载_files/integrator.js.下载"></script><link rel="preload" href="./贝贝BiliBili - B站视频下载_files/integrator.js.下载" as="script"><script type="text/javascript" src="./贝贝BiliBili - B站视频下载_files/integrator.js.下载"></script></head>
+
+<body class="bg-dark" aria-hidden="false">
+    
+<!-- Modal -->
+<div class="modal fade" id="config" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+<form method="post">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle"><i class="fas fa-cogs mr-2"></i>设置</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+	<input type="hidden" name="config" value="set">
+	<div>
+	<i class="fas fa-tshirt mr-2"></i>设置主题
+	<div class="custom-control custom-radio custom-control-inline ml-2">
+		<input class="custom-control-input" type="radio" name="theme" id="config1" value="white">
+		<label class="custom-control-label" for="config1">白色主题</label>
+	</div>
+	<div class="custom-control custom-radio custom-control-inline">
+		<input class="custom-control-input" type="radio" name="theme" id="config2" value="dark" checked="">
+		<label class="custom-control-label" for="config2">黑色主题</label>
+	</div>
+	</div>
+	<hr>
+	<div>
+	<i class="fas fa-wrench mr-2"></i>增强默认
+	<div class="custom-control custom-radio custom-control-inline ml-2">
+		<input class="custom-control-input" type="radio" name="configzengqiang" id="config3" value="flase">
+		<label class="custom-control-label" for="config3">关闭</label>
+	</div>
+	<div class="custom-control custom-radio custom-control-inline">
+		<input class="custom-control-input" type="radio" name="configzengqiang" id="config4" value="true" checked="">
+		<label class="custom-control-label" for="config4">开启</label>
+	</div>
+	</div>
+	
+	<hr>
+	<div>
+	<i class="fas fa-wrench mr-2"></i>精简模式
+	<div class="custom-control custom-radio custom-control-inline ml-2">
+		<input class="custom-control-input" type="radio" name="confighide" id="config5" value="flase" checked="">
+		<label class="custom-control-label" for="config5">关闭</label>
+	</div>
+	<div class="custom-control custom-radio custom-control-inline">
+		<input class="custom-control-input" type="radio" name="confighide" id="config6" value="true">
+		<label class="custom-control-label" for="config6">开启</label>
+	</div>
+	<small id="emailHelp" class="form-text text-muted">屏蔽显示群、赞助、站内链接(设置一次2天有效期)</small>
+	</div>	
+	
+	<hr>
+	<div>
+	<i class="fas fa-lock mr-2"></i>解析密码
+	<div class="custom-control custom-radio custom-control-inline">
+	<input type="text" class="form-control" name="password" id="configpassword" value="">
+	</div>
+	<small id="emailHelp" class="form-text text-muted"></small>
+	</div>
+	
+	
+	<hr>
+	<h6>此配置清空浏览器缓存会恢复默认</h6>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+        <button type="submit" class="btn btn-primary">保存</button>
+      </div>
+</form>
+    </div>
+  </div>
+</div>
+    <nav class="navbar navbar-expand-lg navbar-dark font-weight-bold navbar-dark bg-dark">
+  <a class="navbar-brand" href="https://xbeibeix.com/api/bilibili/"><i class="fab fa-grav fa-2x"></i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="https://xbeibeix.com/">贝贝主页<span class="sr-only">(current)</span></a>
+      </li>
+      
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="https://xbeibeix.com/api/bilibili/#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          更多工具导航
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="https://xbeibeix.com/api/bilibili/">贝贝BILIBILI</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://xbeibeix.com/api/bilibili/service/">本地服务工具</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://xbeibeix.com/api/tiktok/">短视频下载平台</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://xbeibeix.com/videotool/">在线转换格式</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://xbeibeix.com/file/">贝贝文件云</a>
+        </div>
+      </li>
+      
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="https://xbeibeix.com/api/bilibili/#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          小游戏
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="https://xbeibeix.com/api/game/2048/">2048</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://xbeibeix.com/api/bilibili/#">更多待添加..</a>
+        </div>
+      </li>
+      <li class="nav-item">
+      <button id="button-1" type="button" class="btn btn-block btn-dark" data-toggle="modal" data-target="#config">
+<i class="fas fa-cogs mr-2"></i>自定义设置
+</button>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;k=74q3l77MD29Y-jspBcYfTaiLDLTBIEh3" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="群内禁止任何形式广告">QQ群1002100215<span class="sr-only">(current)</span></a>
+      </li>
+      
+    </ul>
+
+  </div>
+</nav>
+
+    <div class="container-fluid" style="height: auto !important;">
+    <div class="row clearfix" style="height: auto !important;">
+
+
+        <div class="col-md-8 column" style="height: auto !important;">
+
+
+
+
+
+        <form method="post">
+            <div id="boxs" class="shadow p-3 mb-3 mt-3 rounded bg-secondary text-white">
+
+
+
+                <div class="row clearfix">
+                    <div class="col-md-8 column">
+
+                        <input type="text" name="bilibiliurl2123533" class="form-control" aria-describedby="button-addon1" placeholder="输入地址" value="https://www.bilibili.com/video/BV1us4y1Q7SB/?spm_id_from=333.1007.tianma.1-3-3.click">
+                    </div>
+                    <div class="col-md-4 column">
+                        <button class="btn btn-block btn-dark" type="submit" id="button-1"><i class="fas fa-angle-double-left mr-2"></i>解析视频<i class="fas fa-angle-double-right ml-2"></i></button>
+                    </div>
+                </div>
+
+
+                <div class="row mt-2">
+                    <div class="col-md-4">
+                        <div class="custom-control custom-switch mt-2">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1" name="zengqiang" value="true" checked="">
+                            <label class="custom-control-label" for="customSwitch1">增强解析 (如果失败请尝试关闭)</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <a href="https://xbeibeix.com/api/bilibili/#" data-toggle="tooltip" data-placement="top" title="" data-original-title="点击刷新验证码"><img src="./贝贝BiliBili - B站视频下载_files/code.php" onclick="javascript:this.src=&#39;https://xbeibeix.com/api/bilibili/code.php?tm=&#39;+Math.random();"></a>
+                            <input type="text" name="code" class="form-control form-control-lg ml-2" aria-describedby="button-addon1" placeholder="请输入验证码" value="">
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn btn-block btn-dark" href="https://www.google.cn/intl/zh-CN/chrome/" role="button" id="button-1" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="请优先使用谷歌浏览器进行操作"><i class="fas fa-globe-asia mr-2"></i>建议使用谷歌浏览器</a>
+                    </div>
+                </div>
+
+
+
+
+
+        
+
+        
+        <hr>
+
+        <div class="alert alert-primary" role="alert">
+如果失败请多尝试几次或使用本地服务工具。
+请尝试选择其他格式来改变画质
+</div>    </div></form>
+
+    <div id="boxs" class="shadow p-3 mb-3 rounded bg-secondary text-white" style="height: auto !important;">
+   <script async="" src="./贝贝BiliBili - B站视频下载_files/adsbygoogle.js.下载" crossorigin="anonymous" data-checked-head="true"></script>
+<!-- bilibili -->
+<ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-6601173303789564" data-ad-slot="8168102234" data-ad-format="auto" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_1_host" style="border: none; height: 280px; width: 1181px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:1181px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1181" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./贝贝BiliBili - B站视频下载_files/ads.html" data-google-container-id="a!2" data-google-query-id="CNuww8SS9v4CFTlcDwIdq-0Ogg" data-load-complete="true"></iframe></div></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </div>
+
+
+    <div id="boxs" class="shadow p-3 mb-3 rounded bg-secondary text-white">
+        
+        <div class="row row-cols-1 row-cols-sm-2">
+            <div class="col mb-2"><a class="btn btn-danger btn-block" href="https://xbeibeix.com/app/" role="button" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="【无需下载在线转换格式】">抖音快手微博直播等综合服务</a></div>
+
+            <div class="col mb-2"><a class="btn btn-danger btn-block" href="https://xbeibeix.com/beibei/" role="button" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="">【PC客户端本地服务工具】</a></div>
+
+        </div>
+
+        <hr>
+
+        <div class="row">
+
+
+
+            
+	<div class="col-6 col-md-3 mt-1">
+	  <button id="button-1" class="btn btn-block btn-dark" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    显示视频封面
+  </button>
+  </div>
+
+
+
+
+            
+            <div class="col-6 col-md-3 mt-1">
+                <a class="btn btn-block btn-dark" href="https://wwx.lanzoux.com/iStGli5h5uf" role="button" id="button-1" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="无广告，无捆绑，无病毒，免安装，完全免费。1、可对接本网页高级功能 2、转换格式.合并.拼接 3、下载器 4、更多功能陆续更新 解压密码 123"><i class="fab fa-windows mr-2"></i>下载PC端工具箱</a>
+            </div>
+            <div class="col-6 col-md-3 mt-1">
+                <a class="btn btn-block btn-dark" href="https://xbeibeix.com/beibei" role="button" id="button-1" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title=""><i class="fab fa-windows mr-2"></i>下载贝贝服务工具</a>
+            </div>
+            <div class="col-6 col-md-3 mt-1">
+                <a class="btn btn-block btn-dark" href="https://xbeibeix.com/videotool/" role="button" id="button-1" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title=""><i class="fab fa-windows mr-2"></i>在线格式转换(仅PC)</a>
+            </div>
+
+        </div>
+
+        <hr>
+
+
+        
+    
+			<div class="row clearfix">
+			<div class="col-md-3 column">
+			
+			
+		<form method="post" id="formhd">
+<input type="hidden" name="zengqiang" value="true"><input type="hidden" name="bilibiliurl2123533" value="https://www.bilibili.com/video/BV1us4y1Q7SB/?spm_id_from=333.1007.tianma.1-3-3.click">
+		<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="list"><i class="fas fa-list-ul mr-2"></i>画质</label>
+  </div>
+		<select class="custom-select" name="hd" id="listhd">
+	<option value="116"> 高清 1080P60 </option><option value="80"> 高清 1080P </option><option selected="" value="64"> 高清 720P ◀ </option><option value="32"> 清晰 480P </option><option value="16"> 流畅 360P </option>
+</select>
+</div>
+</form>
+		
+			
+			</div>
+				<div class="col-md-5 column">
+				
+				
+<iframe style="display:none;" name="nm_iframe" src="./贝贝BiliBili - B站视频下载_files/saved_resource(1).html"></iframe>
+
+<form action="https://xbeibeix.com/api/bilibili/download.php" method="get" target="nm_iframe">
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="list"><i class="fas fa-list-ul mr-2"></i>格式</label>
+  </div>
+  
+<select class="custom-select" name="url" id="list">
+	<option value="false" disabled="disabled">▼ 格式 MP4 ▼ 00:01:12</option><option selected="" value="pCyNSRh0xVO2Ttsk1FRKHpHjWTGl8NzAGd0HAHw0vpAxg/t8BzPT97tUA0J8LCGdE9b9Y8cCGGr8GTf/TR/rwRjQKYs/hVB6OQf4LCr74ET/fDh+UzJgWURFu8pQUuIHGVzAYWD4oCdqrQaxeoxN/NpkNu9rfB6as1T++sWMP4CckEfin/dKZemNPobemAIBUn+dXS+5Wk9pYOza2/F44dFAI784L+fEIy2nYWQqjFOBBx+9FqyppTS3B+OxQNIMTWn8w8g5su5so25zfvxW2igCpsT/oLejn7Tt6pomaqx6W3KaUqIFcZjpIU/qUnCqb5XMN29u6GUbu5fLbkbjERUf/vtMkLdPLrwjTZk/p/1pWSXPDlp4lb0ikQ/xiqtLIp+5w0zeI6ogjyMJS5y6YWxTRUcH6sU1EGFlgXhKBY1qfMpufIfPyhWgblL+nscc3f1C7j9QKkIyVkOH+UG5GuroVHLyNWgzQZMT2tUXt9YXM4ZY0DaAzMbeHtrbTTta6OFR/Gobi7sXVn/GSG3VFHzv51h/7stdfw22SLVJKiwOrgzmrdejHcUhWDuxCX0EsupdM1PcH7otZGuW8UWsgOJRPFgL093gfaeLxW4dlT0QYYJ+HK0o6kB7DBLc0XrnBi1ZtU+S/kiCnNZ7m8mFW4/nWoxzbqNhytRqCMm0qcwodzNW3q9p0lv5k+evFEDI">🌈 高清 1080P60 [ 19 MB ] [ 00:01:13 ]</option><option value="false" disabled="disabled"></option>
+	<option value="false" disabled="disabled">▼ 格式 FLV ▼ 00:01:12</option>
+  <option value="A1lwRGr2Pe3vyf2tZEbl2i05zQXYyxe3uOLwQrbFnZMm2bcTVbkDimltyrT0bhWaut5KY1kKSJVsQg/aZXztW/T9I+w1GTJNoaOawiyho3WSei3mrmEUTnWiYK38gYSaGHkEz/k3gHS+I7kYvaOZ8GHPZq4YupaK/JH/egS16/ANlAxWonfAajbJgonN4ArJqNGXPRzbd96AanTSt7Io3wKA2rvX1yqmOhcIaqe4xrRzXaE+vJ/qx2z0hFK71kFK9pFk8Q4RTZZe8/l3wa/nEty+CU5e/v+9TNbzs+MynTK8XlthVNFqoYNcxZXzRtpTiilCplBOablI9+YCi+JxRYDZVmIHXXwPomeRTdKjwJlj8n8swJcyA45GbC9D//M1fnQKvTlwXYqurqqy5+gpUPQAzspgKBIQj/KfHo7oQJQYGEHs60ytEFyfNW+yHUJAX/oxMEv3+0CpxuXnrrWOAoiiNZzNHXfFDjNgIsi7oF1yYPaWAT4ReFsDYxo7RCoZ4qkRw/HUdeqmFhHBU785ymhj9BD8ipZ1jNUplTGIMacLQcWngeiP9S4e0FaN4AcumygKEnF85tKFmJd7Iue7VP3D0kSVgowJ5BP9Wo5XpvK5UmQUgPsDDomj1qP3EhXctABSqHG+Iozv7PiTOfcspLJaKxgCZAipjRF/+MXtAeZF3e3uxdf/BwBKgZLTJ8FASAzqq2YAJDRgLJyBDluFSnn1QXa0haOhI8z29d4cOScDBow2OQpw4Mi35NCnPBCbqdkM2KwQOG/NrDDGgjddQSx4fZctLukpnmySK8CoO7CipkHyYsSRjhrNukUsAfuxPY7TSObKgmlMhxT9ewhFBv+sUGRU46jBFNjGr1gLfUw=">🌈流畅 360P [ 2 MB ] [ 00:01:12 ]</option><option value="yUIH0jiIeSUlizhR8/MovA==">🔥新版推荐 [  MB ] [  ]</option>
+	<option value="false" disabled="disabled"></option>
+
+<option value="false" disabled="disabled">▼ 格式 FLV ▼ 00:01:12 (备用)</option><option value="z9rTyrSTyvyU6fBQkSVVeqYu6TsQ2f9En49VZl/SwL/DNRZgMhklz6QcMWIRXIp9/DnmbzD2Rxb9XLLxST9B+uDRwcPAg9jPxKssaAaSjHPTLI6gUCa2sOQnrbMCmuex0gUZUwFH5oN2dz8zPqe5UEVs0YGCyYxcwgIZ8z6rfej3/8/vUKQC2/dEtXEMhau3AkWckH2LGyFT0UpDDPLRFEQHzdHe9Ej3E8+kVIEO/XXnBEq1IpZ1wRwLqCO/X6fzorlkFD/+MhrEBMv5BxPfA5n+pQ6eFVJSLk1ZWvS6lo6klmctpP2fBHb1kIFtnBAXjh7f85TsfxlSCSppt99CH+y3E9ff8xqUvTdnrPF5i7aoeflV5/faU/1MV/G21xD4rBre+punz8f+DLslMw95e0DvU/08gHAwFIpA84Adoc9Cr+xq8TxeLgCs1jxVzAkVzrMWkyOhhcalyuiaNNrEfWRfuih3gg4sb/6Q8Ui254Pjb4k3G7FykGP6vSmJAT6IPdjgK+5VA/itLQULtEobwuV0GA+0hVn5g3cLkLchrEszEO0J5ZAwco8DAkeD/57cBL6UHyNjTFvtf5gS5ogPt8cZSxud8gr32+FL6wByb1lF512lAkf/yKzf0v7qVDZArzv/U4DDTrTmzQJxMqakuuiII9CYT7q9Oqh7wPpW/1xhTBnQTiBEAl3hvRe+d93mcM2bgoLUgU/74ddSj+j4ueJjuqzUncddBw+HxpKUxy4jszikg56DeQjJ9KNSgNqKnrCYLdBqkoNxFf7CIeV8JWsvy33SUJAvmnkFkhqcrWf2pedQws+gIvQ+PRY4MmDt">🌈流畅 360P  [ 2 MB ] [ 00:01:12 ] (备用)</option><option value="false" disabled="disabled"></option> <option value="false" disabled="disabled">▼ 格式 M4S(mp4) ▼ 视频 00:01:12</option><option value="2YAkYqWnoSpNNP62TE28WhdasB0wtF1cKwEmzz+TewptbB5j2K6l5QxDUZdEVFp2aC1AKNv2nJziQUFCLnHLynEj9jNvnZXuHiFsCQTSyQCvEVUok7lakzHrZQPk8iYq6TKUaING54mAtnrT7c81Maz2LvirhXjJ+b3byewp+x1imbV3rP1K5r6NFP/+3AcRMIVibA0tAtbQyiwOdvy6KAj4YeXkO+6YGALI0yatwimudjxycSfZVBzQaF/5Kr0Y+YPoFgHZBpX/jHr/KjIQl3iW3wq5U1iYkvV4nv7VUi5HBImZCDpRxRTFnCeVHUWfBJ864jSlxZacFtRJHw3EhdHU2bCcs2KEbqE33NRLov+MuZUh8bEvUU3SoGf6PrHDRV7Ui3JG4b45DsTmWoBx364mykkipDpsDbDCoQMkZtpa1MDK5xYNna7EdJ2CRfJ6+XXTThZl0OEPgfgOWoh2A0Mqva5o/BH2xNVky+0XgotsCAPUSjHjk96t2/3emFZjTfXyo0ndo8NG9Q2jAbt/p6cusbI5DbnT8eb6LMP2L6gl4QzIw4zKAFqoaoGYFpGjt4R5Nx4E29aB+4lxvXMHrm1KjnNgsYymgM3gv2yEaKIYvP6f+nphVXsDNAG0O2prO6jUKJ3hxM6bAzOW+skixA==">🔥新版推荐 高清 720P [ 00:01:12 ]</option><option value="A1lwRGr2Pe3vyf2tZEbl2i05zQXYyxe3uOLwQrbFnZMm2bcTVbkDimltyrT0bhWaut5KY1kKSJVsQg/aZXztW/T9I+w1GTJNoaOawiyho3Uc4MAG1mrs4vdmkN8W0x44pBTm8aATbhJw/Cmufq6KUykEY+fqhJf989HpDAtpK1p4XlvO4gaOZO4Ea8nQY5cZ9EghvGGcfp+Egqwc9v8LpOQbvphDmk8vxqbP/nojMg9JsTTeMeoOUnyMkRhRKAMEUAkhvnGGMA3tKIIahT5+HVfJm7Ypef1ps3sRM4dzCh00QbBs53swyzwc7RX82y+9LtAeb4m7I2MP1mKwXJD+nRX2avV6E89+FU0myvKvxZg1yjzMDsV/wsyxH2Geox5mmHjb1yjHUSb3QpCDJZcrDX/KkhZ0TPGffk64CtqwiKU+Ft6qeF4eJU+iCUDzOW9XTsiZMBq3vsS63GozD0lO6yd4mKovfopDw1o6F5GkubiypOeHqq468uqKeqpnbE/uZIvsaYi+tDR2wahR7nk1/x5bJh7uadnB8o9tXmQssBqffM8OxrUffneMjnqPLTm5Z5D5QEyvVHwgxVIaIlAwyl/y5kJP2G9OoRwLCEUNNxTTV/4PMB2MogGQVD2Ii7pP94lCOAClapXSzSHdLUWZXpp7Ck4nIEJxheh8k6fqMnH8KVOvFqTFyRVLifQd7ZUuJUN6KqZM4HDOJcXlFGxL8XxhznLHtRmeBzMAKoXVU4Fob4bnVO16YR2Sf3GwD7d2CKMBjLPDEX4Nxl/uHIo4+kguOMASySfIeJzwxDc77pqJOIbvDZRDTdw90DIhMVbHc8BpsEyySK8b4+I6bRmylA==">🌈视频 高清 720P [ 557 kbps ]</option><option value="A1lwRGr2Pe3vyf2tZEbl2i05zQXYyxe3uOLwQrbFnZMm2bcTVbkDimltyrT0bhWaut5KY1kKSJVsQg/aZXztW/T9I+w1GTJNoaOawiyho3Vq17u2NSHYTtFQpuEl9kam51KKDnjZks10Qkke2XivvPgCbsfhSC+GWg3o/gecmzp0PIlrEApbd53oBT6lJ7YY912HjTBBBNK+KkxdPVYB5LIBSjWgeMiCY9vuVS4LGY0X1ZnMTr4L8h0lCjitqPxgWWSTZDM5kygn2Q1HDqGgh2oFn7bu5dSdV8LHSBvRe0543a2BLCkr7wL3N8mis1vQkJ9muI00tBHXK3bZpUy6EsT0wBNpwOXyY5apf4uIfUr4rSQFJwed4wHIDkf/q4MlJT/Ll7oDXBsaZ7PJ9vE3ZPO6jQpKi6a5vUy4jTRb+5u15YERqq3bJRQ2jsxBd3IwNo9jFMtNDbkaJ2peD4Clj6akipamVAQEdSyOfL1wgkRRjn5Vqzb4d2MoDKpbgjKq1dYuErs8/JwfDU/s64OZMKr6QJDg6WkpBKQoUAghFylRKtuksIyAEvJoZyAgD2LadxOLYVn5geyn4ENiFXmWty5yCR5S70rPjaR6+BbLs7/dGP+KgqaIibXsunkBaQgWzQzyunJ7msYwq7RBwhkDanZ6xSj4hPiYtyu4a/b5nPBKTXYdCGyLDhCTf3spGQq38mL+2PXXkjIP14a59Jgk3spES++fGzeKlIEW7cjqS7lWiWtJuvOu4wsRh8AtFK30woQyM3+Tvl6QKs9SXnSOJsqZzxAxzEKAl0RnCJ/mNa8+6QBj3ZMzBSbIlTyckVyy">🌈视频 1080P [ 981 kbps ]</option><option value="false" disabled="disabled">▼ 音频 ▼ 00:01:12</option><option value="X/Piy/f3OSNfYWkNKC86RbWH8wFdlAD2zqntAXnguFBvtrMj1kIFtC31QzE+uqWi4mkEvz//ofKr1STqrPdYYT0MPYhIBdyoFoivJ1p29ZFmEbyDU4WQXSxWGk+TWbmO7doYpDcsj0rw13UZE+aCf4ctmQkvaAEJOZJ1dsv/TkgovD21crVaSgciTIO5iGK1l7xs4RRpqEFZGLuU9I/28dR/WxYANLJ9A5Q9l+0tLJOhHqk7f8L5lxEPm0FjNAtG0+haRHb8apB4YDvatV/TMy4P7tVTJmcTsn/gjSl3/E/n1wrnKdaix1gst8/yD0fbLITp7SFKcSEWnMDEW4GPHVWNwGZ2gTMTDWGKX4Brfu8g/NY4zMNvlPDMItgwTMhkpUjcOPqF4DoL8lOs0PiDi87ShcHJDoZc35btlehI8l7g0t4KpZ0GpuI0CZNCywK0xhMJizDOJRGEZU43kJ14fqWpbFh7hD47Tc/p3o738UZjIQINEMkDyPqcTWfVLcWT8zge3hmTnBWoMNkRbNtiR+zV1JT2CkX8egfDp2L9vZm4twO/lbmS+PkXvSWJMfxU17osHKe3UzB345jzbLdgIhdZXPSrFq5pXQs836rogN5k6vhhXuBq0wpDU13I421mLJ+XLR3OO0TmctIwq6KQDQ==">🔥新版推荐 音频 [ 00:01:12 ]</option><option value="A1lwRGr2Pe3vyf2tZEbl2i05zQXYyxe3uOLwQrbFnZMm2bcTVbkDimltyrT0bhWaut5KY1kKSJVsQg/aZXztW/T9I+w1GTJNoaOawiyho3W7ad1FB6J+EBUOLrmQ/1vbYKd8Np+oWF+9X1NA6UIhdufon+KTT6iggyoOolwnON6XowjbUKnfD8yvfSqCYICyVxSz5JC5A/H6sF+NrnZIa4QN+inJ7utSeYdAxhMli+wDzVe0bOHm2WWPG9eh1ykE4PvM1a55khE+fjTNfDlRbmPtlKEXNrepdhPCogT1LV6yzG8bINMhwVK91c5NsK6dEy/YwlH1VXexNKvZzY8oUqf7bCQcjsGoQqFxMpqHdVzWz4G5IFJJfBLyWaJFRZF1to6wcvtdhTvnGwXYZ5jYonFWRo/ZoKI1g+3+K07Jxw5yxTuqY3/clO4tkm8X13dl7lqVQKW6GBKTNH4ydn6PnZSUp7hEXaW8zIy8mye9Xd+t2D18CBMADyj+Vlkjhevjy+DJ03yc3d9a1hCtTjjjI4DJrhX5ioCBgjW8td2p/s4SsyhMmTtPjRmTKOehcNCBnU4DCO9dCiVaVmrGzcmSVUOfWwuzhOW76UrbkUBhT4JTpAbBLerHglRy7UrmiTUv4zOkHUCWXDNBCe0TmlQTLi1/sLrlCn0/nYR9NG70kBjKZWmmgZMWAJkL0FerL33YjiUbnpMImUZ7xnDCRYk/YoT22F861a5I9cGIygkdln1d6878D+EQ+p5o1jhny4YIzBEBwTAcUbbLNzdLdfdf97OLJ6uLSyOVyteqgnxVHaYKhLGdM25yFtRY3hxw6ksjyx0/gtnzmQWWooRNtPZkIw==">🎵音频  [ 103kbps ]</option><option value="A1lwRGr2Pe3vyf2tZEbl2i05zQXYyxe3uOLwQrbFnZMm2bcTVbkDimltyrT0bhWaut5KY1kKSJVsQg/aZXztW/T9I+w1GTJNoaOawiyho3W+uE8TtVOHs8tjvOihkr/ileGYDgjVYTeMKEEiLe1nRfKSWn6VNdkJoI88BNRk00IUtus1q63V6XgLzch8Tzi6r96k+lcCGVIrgOI5IsFHlyWprgun/HHX8jvELMPjG9wM8BtM7MWSaGVC+xrSR+4gc0IH2gZn3r0JbpVlE0TTkCkVW0ipLo/YlKBiDpqrOtA3Q5RaxvilqTVjMdk2Jt2XrTxHGMTM2VL5gTy2jdvpJzZ/2O2VdbLRYHb586Gkcu7+cq6QDKEXJ6DevNOHbpyJ7ApFHsxr89M2Jd7vA/PC34/PJp6AJUXbs7DaazQi1F4QeGqKhEcFelBw8/RrgDMYnKNiidu9V6lmQzg2AT6mp5jzROQqsvWEAFfMDdxc+mnapRsZgLM1evDG6Uw+yPxxKgWFXYmXO5nL1WnbgOZ1K52h+QUBa5qKunav+VW5CHrvM/FSKZcs3ywj0EP2Ru7F7iWrTXYUNeW4Rn70mqzddh4J7aYLpZjKVoIUoD6AjLdUt3J+/KBkDQSnYzVugJRCAeSeVWcKt+Ftote8+MHgh7zOzgv9LL3TLOt7r1GdpOkTamg7FTMg/gEY1duCn063CUgWCbPE6GOJ7+v8HkWnzw2VFxm+73D+KxWfjAwN45U2szD79YiBNyIZ7J/Ipl0TPYLGDNlgKG7MY8GdnAESutSsIzN4Bhvljj/r4t+2aP1XaulbF4KR9gt3W3qh7iiu8El/mf5xuxYsKGVoJFdA1w==">🎵音频  [ 48kbps ]</option><option value="A1lwRGr2Pe3vyf2tZEbl2i05zQXYyxe3uOLwQrbFnZMm2bcTVbkDimltyrT0bhWaut5KY1kKSJVsQg/aZXztW/T9I+w1GTJNoaOawiyho3UeqICEePe8lR7bEwcKWHgaGCZMr4BiG7vqhAhagJoO5yocJ47cktVMRmUb/yFOGnUnjx2t5euVG93jNiRaK8WcyE9G2FMABUIY7OtAmWpeI+ZftejZ2nInL1CqDjoiIPROVCqG0V0NZsk4yZTSJBFyeP/EBmrIz92wEE25I6eX8xgkF4KiipCoQ3UnFuQRh8ukeiPufl+AqUliDsChFkzOIQZGAuZ7F3nNUlbzGBUTft1B3RInE+5AHES+di0NQfBpYclM7EOF3f7MOiG/4xR1v6reTX3UiveODw0aTL0kDHd4D7FpXSn6QjTRLI32punCV0vCt/hRJ7kSDLX9bA5K5or4vsTAlhkFO5K0icq328H8jnyp9EKepn8Uoe3ZKInndm8VzATtpakr2c2fEjX73QtxVXMNT8Kh2pQXX3PCch+j/AvZCmEC6lziIlO+iKRXOqp5bZD1ftIhzMN+b4F+ohdJmeLRPg9sdUK2ykmTX2/Ur0Gd8eaV0WLfDXdGk9MM9/CnbjJkhMWk+oQYaBSRCp/8N2buzhEMeE2JMvCnnHx6GRCP9XM2qRAvGAbOkfv+jV9Cf5LneXvPgCVUzMc+Ky/1/sdM9dP0qYBTmGYfWkPXrErOpy3IVISiys3uBzaAImQDDl4zuWwjePikcezg5J+rCMJnjgsOvO+29xMosmoGOxRWUxq+4j08cgOFHR+NONZaSBLz0q9R3hB74AsOhDfyGd4HlcGBwiwEah5pGg==">🎵音频  [ 103kbps ]</option><option value="false" disabled="disabled">▲（注：M4S格式需合并音频与视频）▲</option>
+</select>
+
+</div>
+				</form></div>
+				<div class="col-md-4 column">
+<input type="hidden" name="bb" value="www.bilibili.com">
+<button id="download" type="submit" class="btn btn-primary btn-block"><i class="fas fa-cloud-download-alt mr-2"></i>下载</button>
+
+				</div>
+			</div>
+
+
+    
+<div class="collapse" id="collapseExample">
+    <img src="./贝贝BiliBili - B站视频下载_files/12858b5d147f1877eb5961eac94a0be9878568b0.jpg" class="img-fluid" alt="">
+</div>
+
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe id="player" class="embed-responsive-item" src="./贝贝BiliBili - B站视频下载_files/saved_resource(2).html" allowfullscreen=""></iframe>
+</div>
+
+<footer id="text2" class="blockquote-footer text-right text-white">解析结果由贝贝BILIBILI API提供</footer>
+  
+  <div class="input-group mb-2 mt-2">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">作者</span>
+  </div>
+  <input type="text" readonly="" class="form-control" value="科学穿梭机" aria-describedby="basic-addon1">
+</div>
+
+  <div class="input-group mb-2">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">标题</span>
+  </div>
+  <input type="text" readonly="" class="form-control" value="“所以人类科学史上的遗憾是什么呢”" aria-describedby="basic-addon1">
+</div>
+
+ <div class="input-group mb-2">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">描述</span>
+  </div>
+  <input type="text" readonly="" class="form-control" value="“所以人类科学史上的遗憾是什么呢”" aria-describedby="basic-addon1">
+</div>
+
+ <div class="input-group mb-2">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">封面</span>
+  </div>
+  <input type="text" readonly="" class="form-control" value="https://i0.hdslb.com/bfs/archive/12858b5d147f1877eb5961eac94a0be9878568b0.jpg" aria-describedby="basic-addon1">
+</div>
+
+ <div class="input-group mb-2">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">清晰度</span>
+  </div>
+  <input type="text" readonly="" class="form-control" value="高清 1080P60" aria-describedby="basic-addon1">
+</div>
+
+ <div class="input-group mb-2">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1"><a href="https://cn-gddg-ct-01-21.bilivideo.com/upgcxcode/10/99/1123929910/1123929910-1-208.mp4?e=ig8euxZM2rNcNbNBnwdVhwdlhbU3hwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&amp;uipk=5&amp;nbs=1&amp;deadline=1684113337&amp;gen=playurlv2&amp;os=bcache&amp;oi=1921313500&amp;trid=0000fc3f35c4a56f41bf8a67658ea5626e24T&amp;mid=3493116378090246&amp;platform=html5&amp;upsig=68c67e6a02805f3db29ca0a6d46b662c&amp;uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform&amp;cdnid=61321&amp;bvc=vod&amp;nettype=0&amp;bw=258741&amp;orderid=0,1&amp;buvid=&amp;build=0&amp;mobi_app=&amp;logo=80000000" target="_blank" id="mp4-url">MP4地址</a></span>
+  </div>
+  <textarea class="form-control" readonly="" aria-label="With textarea" rows="3" id="mp4-url2">https://cn-gddg-ct-01-21.bilivideo.com/upgcxcode/10/99/1123929910/1123929910-1-208.mp4?e=ig8euxZM2rNcNbNBnwdVhwdlhbU3hwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&amp;uipk=5&amp;nbs=1&amp;deadline=1684113337&amp;gen=playurlv2&amp;os=bcache&amp;oi=1921313500&amp;trid=0000fc3f35c4a56f41bf8a67658ea5626e24T&amp;mid=3493116378090246&amp;platform=html5&amp;upsig=68c67e6a02805f3db29ca0a6d46b662c&amp;uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform&amp;cdnid=61321&amp;bvc=vod&amp;nettype=0&amp;bw=258741&amp;orderid=0,1&amp;buvid=&amp;build=0&amp;mobi_app=&amp;logo=80000000</textarea>
+</div>
+
+ <div class="input-group mb-2">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1"><a href="https://xbeibeix.com/api/bilibili/" target="_blank" id="flv-url">FLV地址</a></span>
+  </div>
+  <textarea class="form-control" readonly="" aria-label="With textarea" rows="3" id="flv-url2"></textarea>
+</div>
+<div class="alert alert-primary" role="alert">
+地址链接可以复制到PC客户端本地服务工具中下载
+</div>
+<a class="btn btn-danger btn-block" href="https://xbeibeix.com/beibei/" role="button" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="">【PC客户端本地服务工具】</a>
+    </div>
+
+
+    </div>
+
+
+    <div class="col-md-4 column" style="height: auto !important;"><div class="shadow p-3 mb-2 mt-3 bg-white rounded">
+    <a class="btn btn-danger  btn-block" href="https://pay.xbeibeix.com/Sponsor/New/?id=1" role="button"><i class="far fa-gem mr-2 ml-1"></i>点击赞助本站<i class="far fa-gem mr-1 ml-2"></i></a>
+</div>
+<div id="text-box" class="alert alert-dark" role="alert">
+    本站由以下用户赞助支持!真心感谢各位!
+</div>
+
+<div id="boxs" class="shadow p-3 mb-3 mt-3 rounded bg-secondary text-white">
+    
+<footer id="text2" class="blockquote-footer text-white">2023-05-15 01:43:49</footer>
+<span class="input-group-text font-weight-bold" id="basic-addon1">🌈 匿名 👉 赞助 <i class="fas fa-yen-sign mr-1 ml-1"></i>*</span>
+
+
+<footer id="text2" class="blockquote-footer text-white">2023-05-14 23:45:45</footer>
+<span class="input-group-text font-weight-bold" id="basic-addon1">🌈 匿名 👉 赞助 <i class="fas fa-yen-sign mr-1 ml-1"></i>*</span>
+
+
+<footer id="text2" class="blockquote-footer text-white">2023-05-14 22:13:36</footer>
+<span class="input-group-text font-weight-bold" id="basic-addon1">🌈 Joel 👉 赞助 <i class="fas fa-yen-sign mr-1 ml-1"></i>*</span>
+
+
+<div class="alert bg-dark text-white mb-2" role="alert">
+留言：白嫖了这么久该赞助了 
+</div>
+<footer id="text2" class="blockquote-footer text-white">2023-05-14 17:28:31</footer>
+<span class="input-group-text font-weight-bold" id="basic-addon1">🌈 天空 👉 赞助 <i class="fas fa-yen-sign mr-1 ml-1"></i>100</span>
+<div class="alert bg-dark text-white mb-2" role="alert">
+留言：谢谢
+</div>
+<footer id="text2" class="blockquote-footer text-white">2023-05-14 13:54:03</footer>
+<span class="input-group-text font-weight-bold" id="basic-addon1">🌈 zzz 👉 赞助 <i class="fas fa-yen-sign mr-1 ml-1"></i>5</span>
+<div class="alert bg-dark text-white mb-2" role="alert">
+留言：太感谢了！超级好用！帮忙解决了很多事！！千万千万不要没啦！！
+</div>
+<footer id="text2" class="blockquote-footer text-white">2023-05-13 19:58:13</footer>
+<span class="input-group-text font-weight-bold" id="basic-addon1">🌈 匿名 👉 赞助 <i class="fas fa-yen-sign mr-1 ml-1"></i>*</span>
+
+
+<div class="alert bg-dark text-white mb-2" role="alert">
+留言：谢谢大神！
+</div>
+<footer id="text2" class="blockquote-footer text-white">2023-05-13 15:09:44</footer>
+<span class="input-group-text font-weight-bold" id="basic-addon1">🌈 Luka_星 👉 赞助 <i class="fas fa-yen-sign mr-1 ml-1"></i>*</span>
+
+
+<div class="alert bg-dark text-white mb-2" role="alert">
+留言：用了好久了，今天在用顺便支持一下。
+</div>
+<footer id="text2" class="blockquote-footer text-white">2023-05-13 13:08:11</footer>
+<span class="input-group-text font-weight-bold" id="basic-addon1">🌈 谢谢你 👉 赞助 <i class="fas fa-yen-sign mr-1 ml-1"></i>*</span>
+
+
+<div class="alert bg-dark text-white mb-2" role="alert">
+留言：很好用
+</div>
+<footer id="text2" class="blockquote-footer text-white">2023-05-13 12:29:21</footer>
+<span class="input-group-text font-weight-bold" id="basic-addon1">🌈 社会生产力爆炸 👉 赞助 <i class="fas fa-yen-sign mr-1 ml-1"></i>18</span>
+<div class="alert bg-dark text-white mb-2" role="alert">
+留言：感谢互联网时代的传火者
+</div>
+<footer id="text2" class="blockquote-footer text-white">2023-05-13 09:51:50</footer>
+<span class="input-group-text font-weight-bold" id="basic-addon1">🌈 TAO 👉 赞助 <i class="fas fa-yen-sign mr-1 ml-1"></i>2</span>
+<div class="alert bg-dark text-white mb-2" role="alert">
+留言：加油，很棒！
+</div>
+<footer id="text2" class="blockquote-footer text-white">2023-05-13 09:35:02</footer>
+<span class="input-group-text font-weight-bold" id="basic-addon1">🌈 EMMA 👉 赞助 <i class="fas fa-yen-sign mr-1 ml-1"></i>5</span>
+<div class="alert bg-dark text-white mb-2" role="alert">
+留言：真的很有用！！！
+</div>
+<footer id="text2" class="blockquote-footer text-white">2023-05-13 08:36:08</footer>
+<span class="input-group-text font-weight-bold" id="basic-addon1">🌈 麦田美术 👉 赞助 <i class="fas fa-yen-sign mr-1 ml-1"></i>10</span>
+<div class="alert bg-dark text-white mb-2" role="alert">
+留言：感谢付出
+</div></div>
+
+<ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-6601173303789564" data-ad-slot="8168102234" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_2_host" style="border: none; height: 280px; width: 587px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0;width:587px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="587" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./贝贝BiliBili - B站视频下载_files/ads(1).html" data-google-container-id="a!3" data-google-query-id="CPnbxMSS9v4CFadZDwIdm2sFNw" data-load-complete="true"></iframe></div></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+    </div>
+    </div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./贝贝BiliBili - B站视频下载_files/ads(2).html" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins>
+
+
+    <!-- Modal ad-->
+    <div class="modal fade" id="Modal-tips" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">提示</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger" role="alert">
+                        请您关闭浏览器广告屏蔽插件，或将本站添加为白名单谢谢您。
+                    </div>
+                    <hr>
+                    <h5>这个提示不会影响您的正常使用，非常感谢您的支持。</h5>
+                    <a class="btn btn-block btn-dark" href="https://www.google.cn/intl/zh-CN/chrome/" role="button" id="button-1" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="请优先使用谷歌浏览器进行操作"><i class="fas fa-globe-asia mr-2"></i>建议使用谷歌浏览器</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MP4 Modal -->
+    <div class="modal fade" id="mp4modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">提示</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>MP4和M4S格式下载方法</h6>
+                    <h6>PC端：【右键点击视频】选择【视频另存为】</h6>
+                    <h6>如果没有另存为选项，请更换Google Chrome浏览器</h6>
+                    <hr>
+                    <h6>Windows端 也可复制下方地址到本站提供的客户端中下载链接</h6>
+                    <hr>
+                    <h6>FLV格式点击下载按钮下载</h6>
+                    <h6>如果弹出下载，请更换Google Chrome浏览器</h6>
+                    <hr>
+                    <h6>移动设备：长按下方【MP4地址】下载，使用带下载功能的浏览器</h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="google-ad testAd">AD</div>
+    
+    <script>
+$(function(){
+   setTimeout(function(){
+		if ($('.google-ad').height() == 0){
+		alert('您的浏览器可能使用了广告屏蔽插件，或您使用了其他屏蔽广告工具。\n请您支持本站发展，将本站地址添加到广告屏蔽白名单中。\n您将不会再看到此提示。\n这个提示不会影响您继续使用。\n非常感谢您的支持！');
+		$('#Modal-tips').modal('show');}
+		
+  },3000);
+});
+
+
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+
+        $("#listhd").change(function() {
+            var form = document.getElementById("formhd");
+            form.submit();
+        });
+
+        $("#eplist").change(function() {
+            var form = document.getElementById("formlist");
+            form.submit();
+        });
+
+
+        $("div [id=player2]").click(function() {
+            //alert($(this).attr("url"));
+            $("#topplayer").attr("src", "./biliplayer/?url=" + $(this).attr("bvid"));
+            $("#playerTitle").text($(this).attr("beibei_title"));
+            $("#playergo").val($(this).attr("bvid"));
+            $('#exampleModalCenter').modal('show')
+        });
+
+        $("button#offplayer").click(function() {
+            //alert('off');
+            $("#topplayer").attr("src", "about:blank");
+            $('#exampleModalCenter').modal('hide')
+        });
+
+
+        ;
+        var encode_version = 'sojson.v5',
+            oeyff = '__0x7c3a4',
+            __0x7c3a4 = ['wpcBLcOMwpE=', 'wqQSwrlAwpLDoA==', 'w6oVX8Kgw44=', 'LcK3woA5Ag==', 'wqJxJQ==', 'wpXDm8OBNBTCnW0=', 'e8KWwpfDqw==', 'w6cYw4M=', 'wp51wrxmYApzwrbDsxpS', 'UMKRw4c=', 'aF0bwpDDvMOe', 'CsKqCkoL', 'w5kOw4B+UgR+wrdRXUwvYMOlw5HClQ==', 'RcK8wpbDnMK9w7zCjgVzw5BVCsOYa8KBwqo=', 'w5rDicKA', 'VFUfRBvDiMOi', 'w7gpw6o=', 'c8OGw7c=', 'wrlRBBjDpcKGwrPDn3nCi2Y=', 'wrkaXBQHw6N8SA==', 'GsKVbQ==', 'w7Euw6ZO', 'HTvCqX5lDcOUwqof', 'aW7CkE94wrVjBcKV', '5Lql6IKY5Yi26ZiqTMKifsO1w5bCkAIPw5M=', 'JF7DsC8OWiAhYzgneFh5wozCmQ==', 'WgIUwpHDrcO4esKGw7t+wpvDiDA5w4Z9', 'wqJ0wrs=', 'wohxwrpgXlo='];
+        (function(_0x4459cd, _0x5b3e0a) {
+            var _0x401bc7 = function(_0x332f15) {
+                while (--_0x332f15) {
+                    _0x4459cd['push'](_0x4459cd['shift']());
+                }
+            };
+            _0x401bc7(++_0x5b3e0a);
+        }(__0x7c3a4, 0x175));
+        var _0x4525 = function(_0x46b41e, _0x4b9780) {
+            _0x46b41e = _0x46b41e - 0x0;
+            var _0x24583d = __0x7c3a4[_0x46b41e];
+            if (_0x4525['initialized'] === undefined) {
+                (function() {
+                    var _0x24ddd3 = typeof window !== 'undefined' ? window : typeof process === 'object' && typeof require === 'function' && typeof global === 'object' ? global : this;
+                    var _0x416079 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+                    _0x24ddd3['atob'] || (_0x24ddd3['atob'] = function(_0x541448) {
+                        var _0x47dc8b = String(_0x541448)['replace'](/=+$/, '');
+                        for (var _0x28da72 = 0x0, _0x2a8967, _0x365a52, _0xdfab69 = 0x0, _0x48a56a = ''; _0x365a52 = _0x47dc8b['charAt'](_0xdfab69++); ~_0x365a52 && (_0x2a8967 = _0x28da72 % 0x4 ? _0x2a8967 * 0x40 + _0x365a52 : _0x365a52, _0x28da72++ % 0x4) ? _0x48a56a += String['fromCharCode'](0xff & _0x2a8967 >> (-0x2 * _0x28da72 & 0x6)) : 0x0) {
+                            _0x365a52 = _0x416079['indexOf'](_0x365a52);
+                        }
+                        return _0x48a56a;
+                    });
+                }());
+                var _0x27f525 = function(_0x5b862f, _0x510bd5) {
+                    var _0xcd0bf1 = [],
+                        _0x387cc9 = 0x0,
+                        _0x492a29, _0x1cadc3 = '',
+                        _0x3bc391 = '';
+                    _0x5b862f = atob(_0x5b862f);
+                    for (var _0xc91a0e = 0x0, _0x54c042 = _0x5b862f['length']; _0xc91a0e < _0x54c042; _0xc91a0e++) {
+                        _0x3bc391 += '%' + ('00' + _0x5b862f['charCodeAt'](_0xc91a0e)['toString'](0x10))['slice'](-0x2);
+                    }
+                    _0x5b862f = decodeURIComponent(_0x3bc391);
+                    for (var _0xb65fb7 = 0x0; _0xb65fb7 < 0x100; _0xb65fb7++) {
+                        _0xcd0bf1[_0xb65fb7] = _0xb65fb7;
+                    }
+                    for (_0xb65fb7 = 0x0; _0xb65fb7 < 0x100; _0xb65fb7++) {
+                        _0x387cc9 = (_0x387cc9 + _0xcd0bf1[_0xb65fb7] + _0x510bd5['charCodeAt'](_0xb65fb7 % _0x510bd5['length'])) % 0x100;
+                        _0x492a29 = _0xcd0bf1[_0xb65fb7];
+                        _0xcd0bf1[_0xb65fb7] = _0xcd0bf1[_0x387cc9];
+                        _0xcd0bf1[_0x387cc9] = _0x492a29;
+                    }
+                    _0xb65fb7 = 0x0;
+                    _0x387cc9 = 0x0;
+                    for (var _0x5e1b82 = 0x0; _0x5e1b82 < _0x5b862f['length']; _0x5e1b82++) {
+                        _0xb65fb7 = (_0xb65fb7 + 0x1) % 0x100;
+                        _0x387cc9 = (_0x387cc9 + _0xcd0bf1[_0xb65fb7]) % 0x100;
+                        _0x492a29 = _0xcd0bf1[_0xb65fb7];
+                        _0xcd0bf1[_0xb65fb7] = _0xcd0bf1[_0x387cc9];
+                        _0xcd0bf1[_0x387cc9] = _0x492a29;
+                        _0x1cadc3 += String['fromCharCode'](_0x5b862f['charCodeAt'](_0x5e1b82) ^ _0xcd0bf1[(_0xcd0bf1[_0xb65fb7] + _0xcd0bf1[_0x387cc9]) % 0x100]);
+                    }
+                    return _0x1cadc3;
+                };
+                _0x4525['rc4'] = _0x27f525;
+                _0x4525['data'] = {};
+                _0x4525['initialized'] = !![];
+            }
+            var _0x2952ce = _0x4525['data'][_0x46b41e];
+            if (_0x2952ce === undefined) {
+                if (_0x4525['once'] === undefined) {
+                    _0x4525['once'] = !![];
+                }
+                _0x24583d = _0x4525['rc4'](_0x24583d, _0x4b9780);
+                _0x4525['data'][_0x46b41e] = _0x24583d;
+            } else {
+                _0x24583d = _0x2952ce;
+            }
+            return _0x24583d;
+        };
+
+        function encrypt(_0x336ffa) {
+            var _0x456166 = {
+                'hhmwg': _0x4525('0x0', 'lY7^'),
+                'VlneJ': _0x4525('0x1', ')sot')
+            };
+            var _0x9fab4 = CryptoJS[_0x4525('0x2', 'VEcz')][_0x4525('0x3', 'm]hX')]['parse'](_0x456166[_0x4525('0x4', 'DW4g')]);
+            var _0x4cc587 = CryptoJS['enc'][_0x4525('0x5', 'GuA)')][_0x4525('0x6', 'y6UY')](_0x456166[_0x4525('0x7', 'j*g[')]);
+            var _0x518a60 = CryptoJS[_0x4525('0x8', 'eITC')][_0x4525('0x9', 'GRAR')](_0x336ffa, _0x9fab4, {
+                'iv': _0x4cc587,
+                'mode': CryptoJS[_0x4525('0xa', 'ThGR')][_0x4525('0xb', 'o(Cg')],
+                'adding': CryptoJS['pad'][_0x4525('0xc', 'm]hX')]
+            })['toString']();
+            return _0x518a60;
+        }
+
+        function decrypt(_0x55cd15) {
+            var _0x2b29a5 = CryptoJS[_0x4525('0xd', 'p(J)')][_0x4525('0xe', 'ZJjv')][_0x4525('0xf', '2W(k')](_0x4525('0x10', 'R!FI'));
+            var _0x431fea = CryptoJS['enc']['Latin1']['parse'](_0x4525('0x11', 'N6Ge'));
+            var _0x28806e = CryptoJS[_0x4525('0x12', 'U[)g')][_0x4525('0x13', 'u4yX')](_0x55cd15, _0x2b29a5, {
+                'iv': _0x431fea,
+                'mode': CryptoJS['mode'][_0x4525('0x14', 'R!FI')],
+                'adding': CryptoJS[_0x4525('0x15', 'KvSw')][_0x4525('0x16', 'eITC')]
+            })[_0x4525('0x17', 'o*r^')](CryptoJS[_0x4525('0x18', 'ZH@&')][_0x4525('0x19', 'o(Cg')]);
+            return _0x28806e;
+        };
+        if (!(typeof encode_version !== _0x4525('0x1a', 'lEL1') && encode_version === _0x4525('0x1b', '@csz'))) {
+            window['alert'](_0x4525('0x1c', 'gst['));
+        };
+        encode_version = 'sojson.v5';
+
+
+
+        //$("#add").fadeOut(2000);
+
+        
+	$("body").addClass("bg-dark");
+	$("div#boxs").removeClass("bg-white");
+	$("div#boxs").addClass("bg-secondary text-white");
+	$("#text1").removeClass("text-danger");
+	$("#text1").addClass("text-warning");
+	$("*#text2").addClass("text-white");
+	$("button#button-1,a#button-1").removeClass("btn-primary");
+	$("button#button-1,a#button-1").addClass("btn-dark");
+	$("div#boxs2").addClass("bg-dark text-white");
+	$("div#text-box").removeClass("alert-primary");
+	$("div#text-box").addClass("alert-dark");
+	
+        var hahaha = 'pCyNSRh0xVO2Ttsk1FRKHpHjWTGl8NzAGd0HAHw0vpAxg/t8BzPT97tUA0J8LCGdE9b9Y8cCGGr8GTf/TR/rwRjQKYs/hVB6OQf4LCr74ET/fDh+UzJgWURFu8pQUuIHGVzAYWD4oCdqrQaxeoxN/NpkNu9rfB6as1T++sWMP4CckEfin/dKZemNPobemAIBUn+dXS+5Wk9pYOza2/F44dFAI784L+fEIy2nYWQqjFOBBx+9FqyppTS3B+OxQNIMTWn8w8g5su5so25zfvxW2igCpsT/oLejn7Tt6pomaqx6W3KaUqIFcZjpIU/qUnCqb5XMN29u6GUbu5fLbkbjERUf/vtMkLdPLrwjTZk/p/1pWSXPDlp4lb0ikQ/xiqtLIp+5w0zeI6ogjyMJS5y6YWxTRUcH6sU1EGFlgXhKBY1qfMpufIfPyhWgblL+nscc3f1C7j9QKkIyVkOH+UG5GuroVHLyNWgzQZMT2tUXt9YXM4ZY0DaAzMbeHtrbTTta6OFR/Gobi7sXVn/GSG3VFHzv51h/7stdfw22SLVJKiwOrgzmrdejHcUhWDuxCX0EsupdM1PcH7otZGuW8UWsgOJRPFgL093gfaeLxW4dlT0QYYJ+HK0o6kB7DBLc0XrnBi1ZtU+S/kiCnNZ7m8mFW4/nWoxzbqNhytRqCMm0qcwodzNW3q9p0lv5k+evFEDI';
+
+        ['sojson.v4']["\x66\x69\x6c\x74\x65\x72"]["\x63\x6f\x6e\x73\x74\x72\x75\x63\x74\x6f\x72"](((['sojson.v4'] + [])["\x63\x6f\x6e\x73\x74\x72\x75\x63\x74\x6f\x72"]['\x66\x72\x6f\x6d\x43\x68\x61\x72\x43\x6f\x64\x65']['\x61\x70\x70\x6c\x79'](null, "36Y40y34T35q109n112m52Z45t117j114e108U34Y41e46S97Y116c116S114W40V34o104g114p101r102t34P44o100F101p99B114z121t112Q116z40N104k97u104p97K104x97S41q41H59Q10l36h40f34a35Q109a112C52m45W117Y114m108Z50v34X41M46H116G101t120U116D40A100U101C99k114i121a112Q116S40D104V97J104N97L104v97C41o41n59d10U10H36M40T34T35a112s108n97S121M101C114S34z41o46w97G116t116i114N40x34X115e114f99e34R44b32k34B104v116q116m112y115h58Y47S47y120J98B101Z105q98u101Y105h120J46l99n111C109g47A97l112d105A47o112w108k97C121c101y114F47N63E115O61F49t38O117e114w108m61K34C32G43D32J101Z110X99j111l100f101s85L82e73I67J111p109C112W111p110Z101m110R116x40Y100c101t99G114E121C112U116H40U36d40A34z35t108h105E115V116m34u41c46a118D97r108x40U41i41z41K41v59g10K10f36Y40G34L35n108H105G115Y116a34r41F46r99c104s97o110l103h101z40Z102y117X110S99I116t105S111Y110m40Y41h32T123f10y32V32g32F32f105q102E32p40P36F40s34X35J108I105e115b116d34D41J46b118s97q108D40S41K32i33t61S32E34H102J97D108n115A101g34t41F32u123U10h32t32h32v32q32K32J32l32L36g40T34u35c112y108I97Q121y101y114d34m41Y46H97b116E116J114r40D34v115I114U99I34V44R32f34h104D116f116D112C115z58M47C47q120I98v101w105C98U101n105Q120R46t99b111X109E47e97O112u105p47v112V108S97c121A101e114d47p63x115w61L49y38c117M114s108w61m34w32F43n32M101c110c99V111w100N101a85D82k73O67N111Z109J112h111Y110G101X110F116u40B100G101B99i114l121w112u116q40L36O40B34y35L108g105p115j116B34D41K46R118S97T108A40F41e41S41N41V59E10m32J32J32Z32e125C10e10s125J41Y59" ['\x73\x70\x6c\x69\x74'](/[a-zA-Z]{1,}/))))('sojson.v4');
+
+
+
+
+        
+        $("#download").click(function() {
+            var listval = decrypt($("#list").val());
+            if (listval.indexOf(".mp4") != -1) {
+                $('#mp4modal').modal('show')
+            }
+            if (listval.indexOf(".m4s") != -1) {
+                $('#mp4modal').modal('show')
+            }
+        });
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="./贝贝BiliBili - B站视频下载_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P7NB1QS4MQ');
+    </script>
+
+
+    <script>
+        var check = (function() {
+            var callbacks = [],
+                timeLimit = 2,
+                open = false;
+            setInterval(loop, 2);
+            return {
+                addListener: function(fn) {
+                    callbacks.push(fn);
+                },
+                cancleListenr: function(fn) {
+                    callbacks = callbacks.filter(function(v) {
+                        return v !== fn;
+                    });
+                }
+            }
+
+            function loop() {
+                var startTime = new Date();
+                debugger;
+
+                if (new Date() - startTime > timeLimit) {
+                    if (!open) {
+                        callbacks.forEach(function(fn) {
+                            fn.call(null);
+                        });
+                    }
+                    open = true;
+                } else {
+                    open = false;
+                }
+            }
+        })();
+
+        check.addListener(function() {
+            //alert('Open Devtool');
+        });
+
+
+
+        window.setTimeout(function() {
+            if (adsbygoogle instanceof Array) {
+               // $('#Modal-tips').modal('show');
+            }
+        }, 2000);
+
+        console.log('██████╗ ███████╗██╗██████╗ ███████╗██╗\n██╔══██╗██╔════╝██║██╔══██╗██╔════╝██║\n██████╔╝█████╗  ██║██████╔╝█████╗  ██║\n██╔══██╗██╔══╝  ██║██╔══██╗██╔══╝  ██║\n██████╔╝███████╗██║██████╔╝███████╗██║\n╚═════╝ ╚══════╝╚═╝╚═════╝ ╚══════╝╚═╝');
+
+    </script>
+
+
+
+
+<iframe src="./贝贝BiliBili - B站视频下载_files/aframe.html" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="./贝贝BiliBili - B站视频下载_files/zrt_lookup.html" style="display: none;"></iframe><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; clear: none !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; position: fixed !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647 !important; background: transparent !important;" aria-hidden="true" data-ad-status="filled" data-vignette-loaded="true"><div id="aswift_3_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none !important; height: 100vh !important; width: 100vw !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><iframe id="aswift_3" name="aswift_3" style="width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./贝贝BiliBili - B站视频下载_files/zrt_lookup(1).html" data-google-container-id="a!4" data-google-query-id="CML1wcSS9v4CFWFgDwIdz-0DeA" data-load-complete="true"></iframe></div></ins></html>
